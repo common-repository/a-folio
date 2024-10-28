@@ -1,0 +1,32 @@
+// Boolean DT less
+.tpl-datatype-container {
+
+	label[class*=checked-] {
+		width: 1em;
+		height: 1em;
+		font-size: 2em;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 0;
+		cursor: pointer;
+
+		&::before {
+			font-family: FontAwesome;
+			content: "\f096";
+			color: #444;
+			position: absolute;
+			left: 0;
+		}
+
+		&.checked-1 {
+			&::before {
+				content: "\f046";
+			}
+		}
+	}
+
+}
+
+.tpl_settings_page_wrap .tpl-dt-boolean .tpl-default-value {
+	margin-top: 0.2em;
+}
